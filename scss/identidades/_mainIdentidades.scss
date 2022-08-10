@@ -1,0 +1,43 @@
+    /* MAIN */
+
+.maindeIdentidades{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+    padding-bottom: 10%;
+    background-image: url(../images/backgroundImage.jpg);
+    @include imgBackground;
+    & h1{
+        @include estilosH1;
+        text-align: left;
+        margin: 3% 0% 1% 31%;
+        transition: 1s ease;
+        @include tablet{
+        margin: 8% 0% 1% 20%;
+        @include mobile{
+            margin: 8% 0% 5% 10%;
+        }
+        }
+        &:hover{
+            font-size: 5rem;
+            }
+        }
+    }
+    
+.parrafoIdentidad{
+    text-align: left;
+    margin: 1% 31% 0% 31%;
+    font-size: $fontSize;
+    @include tablet{
+        margin: 1% 15% 0% 20%;
+    }
+    @include mobile{
+        margin: 1% 15% 0% 10%;
+    }
+}
+
+.misDiseños{
+    font-weight: bolder;
+}
+    

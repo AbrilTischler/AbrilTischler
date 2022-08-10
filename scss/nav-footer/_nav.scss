@@ -1,0 +1,16 @@
+.violet{
+    background-color: $navColor;
+}
+
+.flex{
+    @include flexNav;
+}
+
+.navbar-nav{
+    font-size: $fontSize;
+    padding: 1%;
+}
+
+.nav-item{
+    padding: 2%;
+}

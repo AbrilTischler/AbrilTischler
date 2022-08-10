@@ -1,0 +1,40 @@
+/* footer */
+footer{
+    grid-area: footer;
+    background-color: $navColor;
+    color: white;
+    font-weight: lighter;
+}
+
+.redesSociales{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 2% 0% 0% 0%;
+    margin-right: 5%;
+    & img:hover{
+        transform: scale(1.2);
+        transition: 1s;
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5%;
+    }
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-bottom: 3%;
+    font-size: $fontSize - 0.4;
+    @include mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+}

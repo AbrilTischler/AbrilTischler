@@ -1,0 +1,44 @@
+/* GALERIA DE IMÁGENES */
+.imagenesGaleria{
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+    display: grid;
+    grid-template-columns:repeat(2, 2fr) ;
+    grid-template-rows:repeat(4, 2fr) ;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "trabajo1 trabajo2"
+    "trabajo3 trabajo4"
+    "trabajo5 trabajo6"
+    "trabajo7 trabajo8"
+    ;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    @include mobile{
+            display: grid;
+            grid-template-columns:repeat(1, 1fr) ;
+            grid-template-rows:repeat(8, 0.5fr) ;
+            gap:20px ;
+            justify-items: center;
+            align-items: center;
+            grid-template-areas: 
+            "trabajo1" 
+            "trabajo2"
+            "trabajo3" 
+            "trabajo4"
+            "trabajo5" 
+            "trabajo6"
+            "trabajo7" 
+            "trabajo8"
+            ;
+            padding-bottom: 10%;
+            padding-top: 7%;
+        }
+}
+
+
+

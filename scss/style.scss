@@ -1,0 +1,34 @@
+/* generales */
+@import "./aspecto-general/aspectosGenerales";
+@import "./aspecto-general/reset";
+
+/* utilities
+variables, mixin, breakpoints y extend */
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./utilities/breakpoints";
+@import "./utilities/extend";
+
+/* nav y footer */
+@import "./nav-footer/nav";
+@import "./nav-footer/footer";
+
+/* INDEX */
+@import "./index/main";
+@import "./index/expForm";
+@import "./index/frase";
+@import "./index/detalles";
+
+/* IDENTIDADES */
+@import "./identidades/mainIdentidades";
+@import "./identidades/logos";
+
+/* GESTION DE REDES */
+@import "./gestionRedes/mainRedes";
+@import "./gestionRedes/contenido";
+
+/* TRABAJOS */
+@import "./trabajos/galeria";
+
+/* CONTACTO */
+@import "./contacto/contacto"

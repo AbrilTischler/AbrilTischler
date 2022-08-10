@@ -1,0 +1,18 @@
+/* EXPERIENCIA */
+
+.experienciaLaboral{
+    grid-area: experienciaLaboral;
+    font-size: $fontSize;
+    color: #243A73;
+    background-color: #DAEAF1;
+    padding: 10% 30% 10% 10%;
+}
+
+/* FORMACION ACADEMICA */
+.formacionAcademica{
+    grid-area: formacionAcademica;
+    font-size: $fontSize;
+    color: #243A73;
+    background-color: #C6DCE4;
+    padding: 10% 20% 10% 10%;
+}
