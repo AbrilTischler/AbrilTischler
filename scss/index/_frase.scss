@@ -36,12 +36,12 @@
     margin-top: 2%;
     font-size: $fontSize2;
     font-style: italic;
-    text-decoration: none;
     padding-left: 22%;
     & a{
         color: #DAEAF1;
+        text-decoration: none;
         &:hover{
-            color: #243A73;
+            color: $hoverColor;
         }
     }
 }

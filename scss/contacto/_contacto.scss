@@ -7,8 +7,9 @@
     & a{
         color: #37a0b0;
         transition: 1s ease;
+        text-decoration: none;
         &:hover{
-            color: $hoverColor;
+            color: #A084CF;
             font-size: $fontSize2;
         }
     }
