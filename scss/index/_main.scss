@@ -43,7 +43,10 @@
         @include estilosH1;
         text-align: center;
         margin-top: 2%;
-        margin-bottom: 2%;
+        margin-bottom: 3%;
+            @include tablet{
+            padding-bottom: 5%;
+            }
         }
     @include mobile{
         padding-top: 15%;
@@ -53,29 +56,42 @@
 /* Informacion e imagen */
 
 .primeraSeccion{
-    @include flexSection;
-    @include mobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-areas: 
+    "imagenPersonal informacionLaboral"
+    "imagenPersonal informacionLaboral"
+    ;
+    justify-items: end;
+    gap: 2%;
+
+        @include mobile{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "imagenPersonal"
+        "informacionLaboral"
+        ;
+        gap: 2%;
+        justify-items: center;
+        }
 }
 
 .informacionLaboral{
+    grid-area: informacionLaboral;
     text-align: left;
     margin-top: 1%;
-    margin-right: 50%;
     font-size: $fontSize;
+    padding-right: 10%;
 
     @include tablet{
-        margin-right: 30%;
-        margin-bottom: 20%;
+        padding-right: 5%;
     }
     @include mobile{
         text-align: center;
-        padding: 5% 6% 0% 7%;
-        margin-right: 1%;
+        padding: 0% 10% 10% 10%;
     }
 }
 
@@ -95,18 +111,9 @@
 }
 
 .imagenPersonal{
-    margin-left: 30%;
-    margin-right: 2%;
-    margin-top: 1%;
+    grid-area: imagenPersonal;
     & img{
         border-radius:10%;
-    }
-    @include tablet{
-        margin-left: 15%;
-    }
-    @include mobile{
-        margin-left: 25%;
-        margin-top: 5%;
     }
 }
 

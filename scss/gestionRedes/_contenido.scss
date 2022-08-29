@@ -37,5 +37,21 @@
 }
 
 .publicacionesAparte{
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+}
+
+.volverDos{
+    padding-bottom: 5%;
+    & a{
+        color: $titulosColor;
+        text-decoration: none;
+        transition: 1s ease;
+        &:hover{
+            color: $hoverColor;
+            font-size: $fontSize+0.2;
+        }
+    }
+    @include mobile{
+        padding-bottom: 10%;
+    }
 }

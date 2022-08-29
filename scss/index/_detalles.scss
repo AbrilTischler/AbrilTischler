@@ -10,11 +10,16 @@
         font-size: 3rem;
         text-align: left;
         margin-top: 3%;
-        margin-bottom: 1%;
+        margin-bottom: 2%;
         font-weight: bolder;
         color: $titulosColor;
         @include tablet{
             text-align: center;
+            padding-bottom: 5%;
+        }
+        @include mobile{
+            padding-bottom: 5%;
+            padding-top: 15%;
         }
     }
 }
@@ -22,21 +27,47 @@
     @include flexSection;
     @include tablet{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
     }
 }
 
-.imagenDetrabajo{
-    padding: 2% 2% 0% 0%;
-}
 
 .miInformacion{
-    padding: 2% 10% 0% 0%;
+    padding: 0% 10% 0% 5%;
     text-align: left;
+    & .habilidades{
+        padding-top: 5%;
+        font-weight: bolder;
+        color: $hoverColor;
+    }
+    & ul {
+        list-style: none;
+    }
+    & li::before {
+        content: "•";
+        color: $hoverColor;
+        display: inline-block; 
+        width: 1em;
+    }
+
     @include tablet{
         padding: 5%;
         text-align: center;
+        & .habilidades{
+            text-align: left;
+            padding-left: 5%;
+        }
+        & ul {
+            text-align: left;
+        }
     }
 }
 

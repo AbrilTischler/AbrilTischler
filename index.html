@@ -69,7 +69,7 @@
             <section class="seccionUno">
 
                 <div class="informacionLaboral">
-                    <p>Hola! Mi nombre es Abril Tischler, soy diseñadora gráfica freelance y estudiante avanzada en Diseño de la Comunicación Visual en la Facultad de Arquitectura, Diseño y Urbanismo de la <strong>Universidad Nacional del Litoral</strong>.</p>
+                    <p>Hola! Mi nombre es Abril Tischler, soy estudiante avanzada en Diseño de la Comunicación Visual en la Facultad de Arquitectura, Diseño y Urbanismo de la Universidad Nacional del Litoral.</p>
                     <p> Actualmente me encuentro haciendo una especialización en Desarrollo Web en Coderhouse.</p> 
                     <div class="sobreMi">
                         <a href="#sobreMi"> Conocé más acerca de mí &lAarr; </a>
@@ -167,8 +167,8 @@
     <!-- Seccion Tercera -->
 
         <section class="seccionTres">
-            <p class="fraseFavorita">Mi frase inspiradora:</p>
-            <p class="paulRandfrase">"El diseño es simple, por eso es tan complicado."</p>
+            <p class="fraseFavorita">Frase inspiradora:</p>
+            <p class="paulRandfrase">"El diseño es simple, por eso es tan complicado"</p>
             <div class="paulRandcita">
                 <a href="https://beatrizxe.com/paul-rand-biografia-logos-obras/" target="_blank">Paul Rand</a>
             </div>
@@ -185,25 +185,49 @@
 
             <!-- Imagen 4 -->
                 <div class="imagenDetrabajo">
-                    <picture> 
-                        <source media="(min-width: 1400px )" srcset="./images/miTrabajo1400.jpg">
-
-                        <source media="(min-width: 768px )" srcset="./images/miTrabajo768.jpg">
-
-                        <source media="(min-width: 300px )" srcset="./images/miTrabajo480.jpg"> 
-
-                        <img src="./images/miTrabajo.jpg" alt="Fotografía de Abril trabajando">
-                    </picture>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/fotoSlider1.png" class="d-block" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/fotoSlider2.png" class="d-block" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/fotoSlider3.png" class="d-block" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/fotoSlider4.png" class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
                 </div>
 
                 <!-- detalles -->
 
                 <div class="miInformacion">
-                    <p>Cuento con experiencia en Gestión de Redes Sociales, Diseño de Identidad Visual (creación de distintos tipos de logo y manuales de marca), Diseño Editorial (tarjetería, afiches, banners, catálogos), Diseño de Gráficas para Cartelería, Vidrieras y Ploteados e Ilustración Digital.
+                    <p>Soy una persona creativa, cuento con experiencia en Gestión de Redes Sociales, Diseño de Identidad Visual, Diseño Editorial, Diseño de Gráficas para Cartelería, Vidrieras y Ploteados e Ilustración Digital.
+                    En mis tiempos libres me gusta hacer animaciónes de mis ilustraciónes vectariales y pintar en distintos soportes.
                     </p>
-                    <p>Habilidades: buena redacción, orgalización, creatividad, capacidad de trabajo en equipo, iniciativa, positividad, adaptabilidad.</p>
+                    <p class="habilidades">Habilidades:</p>
+                    <ul class="misHabilidades">
+                        <li>Buena redacción</li>
+                        <li>Orgalización</li>
+                        <li>Creatividad</li>
+                        <li>Iniciativa</li>
+                        <li>Adaptabilidad</li>
+                        <li>Capacidad de trabajo en equipo</li>
+                    </ul>
                     <div class="volver">
-                        <a href="#volverAinicio">Volver ⭷</a>
+                        <a href="#volverAinicio">Volver &#129045;</a>
                     </div>
                     
             </div>
@@ -213,21 +237,37 @@
         <!-- Footer -->
 
         <footer>
-            <div class="redesSociales">
+    
+            <div class="inputGroup">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
 
+            <div class="logoAbril">
+                <a href="index.html"><img src="./images/logoPersonalblanco.png" alt="Mi logo"></a>
+            </div>
+
+            <div class="redesSociales">
                 <div class="iconoInstagram">
                     <a href="https://www.instagram.com/atipico.creativo/" target="_blank">
                         <img src="./images/iconoInstagram.png" alt="Mi instagram"></a>
                 </div>
+
                 <div class="logoBehance">
-                    <a href="https://www.behance.net/" target="_blank">
+                    <a href="https://www.behance.net/abriltischler" target="_blank">
                         <img src="./images/iconoBehance.png" alt="Cuenta en Behance"></a>
-                </div>
-                
+                </div>    
             </div>
 
+            <div class="textos">
+                <p>¡Visitame en mis Redes Sociales!</p>
+            </div>
+            
+
             <div class="copyright">
-                <p>copyright &copy; 2022</p>
+                <p>Copyright &copy; 2022 todos los derechos reservados.</p>
             </div>
 
         </footer>

@@ -6,6 +6,20 @@
     @include flexNav;
 }
 
+.navbar-brand{
+    & em{
+        color: black;
+    }
+    & em:hover{
+        color: white;
+    }
+    & img:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    
+}
+
 .navbar-nav{
     font-size: $fontSize;
     padding: 1%;

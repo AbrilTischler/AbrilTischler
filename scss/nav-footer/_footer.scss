@@ -2,39 +2,85 @@
 footer{
     grid-area: footer;
     background-color: $navColor;
-    color: white;
-    font-weight: lighter;
+    padding-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "inputGroup logoAbril redesSociales"
+    "textos textos textos"
+    "copyright copyright copyright"
+    ;
+    justify-items: center;
+    justify-content: center;
+
+    @include mobile{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "inputGroup inputGroup"
+        "logoAbril textos"
+        "redesSociales redesSociales"
+        "copyright copyright"
+        ;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.redesSociales{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    padding: 2% 0% 0% 0%;
-    margin-right: 5%;
+.inputGroup{
+    grid-area: inputGroup;
+}
+.logoAbril{
+    grid-area: logoAbril;
     & img:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: 1s;
     }
     @include mobile{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 5%;
+        padding-left: 35%;
+    }
+    
+}
+
+.redesSociales{
+    grid-area: redesSociales;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    & img:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    & .iconoInstagram{
+        padding-right: 7%;
+    }
+    @include mobile{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+}
+
+.textos{
+    grid-area: textos;
+    padding-top: 2%;
+    & p{
+        font-size: $fontSize - 0.2;
+        font-weight: bold;
+        color: white;
+    }
+    @include mobile{
+        padding-right: 35%;
     }
 }
 
 .copyright{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding-bottom: 3%;
-    font-size: $fontSize - 0.4;
-    @include mobile{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 5%;
-        padding-bottom: 3%;
-    }
+    grid-area: copyright;
+    padding-bottom: 1%;
+    font-size: $fontSize - 0.8;
+    font-weight: lighter;
+    color: white;
 }

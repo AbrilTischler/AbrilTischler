@@ -1,21 +1,18 @@
 .programasAfines{
     grid-area: programasAfines;
     padding: 5%;
-    padding-left: 15%;
     background-image: url(../images/fondoDemain.jpg);
     background-attachment: fixed;
     @include imgBackground;
     & p{
         font-size: 3rem;
         text-align: center;
-        padding-right: 20%;
         margin-bottom: 5%;
         font-weight: bolder;
         color: $titulosColor;
 
         @include mobile{
             font-size: 2rem;
-            padding-right: 10%;
             margin-bottom: 10%;
             padding-top: 10%;
         }
@@ -25,24 +22,16 @@
 .graficos{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
-
-    & img{
-        width: 50%;
-        height: auto;
-    }
+    justify-content: space-evenly;
 
     @include mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-left: 30%;
         & img{
-            width: 40%;
-            height: auto;
-            padding-bottom: 15%;
+            width: 95%;
+            padding-bottom: 25%;
         }
     }
 }
