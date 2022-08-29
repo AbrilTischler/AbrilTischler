@@ -16,6 +16,7 @@
 
 <body>
     <header>
+        <!-- Nav -->
         <nav class="navbar navbar-expand-lg navbar-dark violet">
             <div class="container-fluid">
                 <a class="navbar-brand ps-5" href="../index.html"><img src="../images/logopersonal.png" alt="Mi logo"></a>
@@ -24,52 +25,51 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex" id="navbarNav">
-                <ul class="navbar-nav col-lg-8">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="identidades.html">Identidades</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="gestion.html">Gestión de Redes</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="trabajos.html">Trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    <ul class="navbar-nav col-lg-8">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="identidades.html">Identidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gestion.html">Gestión de Redes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    
-
+    <!-- Sección de contacto -->
     <section class="contacto">
-
         <h1><div data-aos="zoom-in">¡Contactame!</div></h1>
 
         <div>
             <h2>Completá el siguiente formulario:</h2>
-
+            <!-- Completar con nombre y apellido -->
             <div class="form-floating mb-3 fs-4 pt-1">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
                 <label for="floatingInput">Nombre y Apellido</label>
             </div>
 
+            <!-- Completar con email-->
             <div class="form-floating mb-3 fs-4 pt-1">
                 <input type="email" class="form-control" id="floatingInput" placeholder="Email">
                 <label for="floatingImput">Email</label>
             </div>
 
+            <!-- Seleccionar Institución -->
             <div class="form-floating mb-3 fs-4 pt-1">
                 <div class="institucion fs-4 pb-1 ps-1">
                     <label for="floatingSelect fs-4">Institución</label>
                 </div>
-
                 <select class="form-select mb-3 fs-4 pt-2" id="floatingSelect" aria-label="Floating label select example">
                     <option value="1">Empresa</option>
                     <option value="2">Autónomo</option>
@@ -78,12 +78,9 @@
             </div>
         </div>
 
-        <!-- select list -->
         <!-- checkbox -->
-
         <div>
             <h3>¿Que trabajo te gustaría realizar?</h3> 
-
             <div class="checkList">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -129,20 +126,21 @@
             </div>
         </div>
 
-        <!-- Valores numéricos -->
+        <!-- Cantidades -->
 
         <div class="datosDeinteres">
-            
             <div class="cantidadNumero">
                 <label for="cantidad">Cantidad</label>
                 <input type="number" name="cantidad" id="cantidad"  value="-" min="1" max="5" step="1">
             </div>
-            <!-- date -->
+
+            <!-- Fecha -->
             <div>
                 <label for="birthday">Fecha del pedido</label>
                 <input type="date" name="birthday" id="birthday">
             </div>
 
+            <!-- Deja un mensaje -->
             <div class="mensaje">
                 <div class="form-floating">
                     <textarea class="form-control" placeholder="Dejá tu mensaje aquí" id="floatingTextarea2" style="height: 100px"></textarea>
@@ -150,6 +148,7 @@
                 </div>
             </div>
             
+            <!-- Botones "Guardar y Reset" -->
             <div class="botones">
                 <div class="d-grid gap-2 d-md-block">
                     <button class="btn btn-primary fs-4" type="button">Guardar</button>
@@ -157,11 +156,9 @@
                 </div>
             </div>
         </div>
-
     </section>
     
     <footer>
-    
         <div class="inputGroup">
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -189,11 +186,9 @@
             <p>¡Visitame en mis Redes Sociales!</p>
         </div>
         
-
         <div class="copyright">
             <p>Copyright &copy; 2022 todos los derechos reservados.</p>
         </div>
-
     </footer>
 
     <script>

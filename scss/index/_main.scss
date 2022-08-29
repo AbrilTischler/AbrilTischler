@@ -32,18 +32,16 @@
 }
 
 /* * MAIN */ 
-
 .maindeIndex{
     grid-area: maindeIndex;
-    padding: 4% 2% 4% 2%;
+    padding: 7% 2% 4% 2%;
     background-image: url(../images/fondoDemain.jpg);
     background-attachment: fixed;
     @include imgBackground;
     & h1{
         @include estilosH1;
         text-align: center;
-        margin-top: 2%;
-        margin-bottom: 3%;
+        padding-bottom: 2%;
             @include tablet{
             padding-bottom: 5%;
             }

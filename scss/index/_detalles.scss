@@ -18,11 +18,11 @@
             padding-bottom: 5%;
         }
         @include mobile{
-            padding-bottom: 5%;
-            padding-top: 15%;
+            padding: 15%, 0%, 5%, 0%;
         }
     }
 }
+
 .detallesSobremi{
     @include flexSection;
     @include tablet{

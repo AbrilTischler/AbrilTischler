@@ -2,6 +2,7 @@
 footer{
     grid-area: footer;
     background-color: $navColor;
+    color: white;
     padding-top: 4%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -30,9 +31,12 @@ footer{
     }
 }
 
+/* Barra de búsqueda */
 .inputGroup{
     grid-area: inputGroup;
 }
+
+/* Icono de mi logo */
 .logoAbril{
     grid-area: logoAbril;
     & img:hover{
@@ -45,6 +49,7 @@ footer{
     
 }
 
+/* Iconos de redes sociales */
 .redesSociales{
     grid-area: redesSociales;
     display: flex;
@@ -59,28 +64,27 @@ footer{
         padding-right: 7%;
     }
     @include mobile{
-        padding-top: 10%;
-        padding-bottom: 5%;
+        padding: 10%, 0%, 5%, 0%;
     }
 }
 
+/* Texto */
 .textos{
     grid-area: textos;
     padding-top: 2%;
     & p{
         font-size: $fontSize - 0.2;
         font-weight: bold;
-        color: white;
     }
     @include mobile{
         padding-right: 35%;
     }
 }
 
+/* Copyright */
 .copyright{
     grid-area: copyright;
     padding-bottom: 1%;
     font-size: $fontSize - 0.8;
     font-weight: lighter;
-    color: white;
 }
