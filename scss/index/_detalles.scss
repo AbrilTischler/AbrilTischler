@@ -82,4 +82,8 @@
             font-size: $fontSize+0.2;
         }
     }
+    @include tablet{
+        text-align: left;
+        padding-left: 5%;
+    }
 }

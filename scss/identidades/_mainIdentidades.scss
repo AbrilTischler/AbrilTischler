@@ -4,8 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 2%;
-    padding-bottom: 5%;
+    padding: 2% 0% 10% 0%;
     background-image: url(../images/backgroundImage.jpg);
     @include imgBackground;
     & h1{
@@ -14,7 +13,7 @@
         margin: 3% 0% 1% 31%;
         transition: 1s ease;
         @include tablet{
-        margin: 8% 0% 1% 20%;
+        margin: 8% 0% 1% 22%;
         @include mobile{
             margin: 8% 0% 5% 10%;
         }
@@ -30,7 +29,7 @@
     margin: 1% 25% 0% 31%;
     font-size: $fontSize;
     @include tablet{
-        margin: 1% 15% 0% 20%;
+        margin: 1% 15% 0% 22%;
     }
     @include mobile{
         margin: 1% 15% 0% 10%;

@@ -46,6 +46,9 @@
             padding-bottom: 5%;
             }
         }
+    @include tablet{
+        padding-bottom: 1%;
+    }
     @include mobile{
         padding-top: 15%;
     }

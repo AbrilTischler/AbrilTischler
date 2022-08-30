@@ -12,7 +12,10 @@
         text-align: left;
         padding: 1% 27% 0% 31%;
         @include tablet{
-            padding: 1% 10% 0% 21%;
+            padding: 1% 10% 1% 21%;
+        }
+        @include mobile{
+            padding: 5% 15% 5% 15%;
         }
     }
     &:hover{
@@ -20,7 +23,10 @@
         transition: all 3s;
     }
     & .misTrabajos{
-        font-weight: bold
+        font-weight: bold;
+        @include tablet{
+            padding-bottom: 5%;
+        }
     }
     & h1{
         @include estilosH1;
@@ -29,23 +35,17 @@
         color: #37a0b0 ;
         transition: 1s ease;
         @include tablet{
-                margin: 3% 0% 2% 21%;
+                margin: 7% 0% 2% 21%;
                 text-align: left;
             }
         @include mobile{
             text-align: center;
-            margin: 15% 5% 2% 5%;
+            margin: 15% 0% 2% 0%;
         }
         &:hover{
             font-size: 5rem;
         }
-        & p{
-            @include mobile{
-                text-align: center;
-                padding: 2% 10% 10% 10%
-                }
-            }
-        }
     }
+}
 
 

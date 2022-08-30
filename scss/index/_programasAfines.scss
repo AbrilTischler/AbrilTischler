@@ -4,6 +4,9 @@
     background-image: url(../images/fondoDemain.jpg);
     background-attachment: fixed;
     @include imgBackground;
+    @include tablet{
+        padding: 10% 0% 15% 0%;
+    }
     & p{
         font-size: 3rem;
         text-align: center;
